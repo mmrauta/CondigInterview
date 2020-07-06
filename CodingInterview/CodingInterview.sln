@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingInterview", "CodingInterview\CodingInterview.csproj", "{384F10DD-9729-4B00-B5B8-26C1933124B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingInterviewTests", "CodingInterviewTests\CodingInterviewTests.csproj", "{489D892E-BE76-4024-B453-E725801AC81F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{384F10DD-9729-4B00-B5B8-26C1933124B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384F10DD-9729-4B00-B5B8-26C1933124B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384F10DD-9729-4B00-B5B8-26C1933124B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384F10DD-9729-4B00-B5B8-26C1933124B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489D892E-BE76-4024-B453-E725801AC81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489D892E-BE76-4024-B453-E725801AC81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489D892E-BE76-4024-B453-E725801AC81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489D892E-BE76-4024-B453-E725801AC81F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F039888A-92A0-425E-82A7-0C9BFCA3DD71}
+	EndGlobalSection
+EndGlobal
