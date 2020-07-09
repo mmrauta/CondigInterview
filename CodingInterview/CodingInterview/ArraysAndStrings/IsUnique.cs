@@ -34,7 +34,6 @@ namespace CodingInterview.ArraysAndStrings
             return true;
         }
 
-
         /// <summary>
         /// This solution changes the input string, but is faster then comparing each character with the rest of the string O(n^2).
         /// Time complexity thanks to sorting - O(n*log(n))
