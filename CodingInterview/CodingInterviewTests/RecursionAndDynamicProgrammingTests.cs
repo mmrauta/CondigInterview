@@ -72,5 +72,32 @@ namespace CodingInterviewTests
             Assert.Equal(expected, resultRecursive.OrderBy(x => x.First()));
             Assert.Equal(expected, resultIterative.OrderBy(x => x.First()));
         }
+
+        [Fact]
+        public void PermutationNoDuplicatesTest()
+        {
+            var expected = new List<string> {
+                "abc", "acb", "bac", "bca", "cab", "cba"
+            }.OrderBy(x => x).ToList();
+
+            var resultRecursive = PermutationNoDuplicates.RunRecursive("abc");
+            var resultIterative = PermutationNoDuplicates.RunIterative("cba");
+
+            Assert.Equal(expected, resultRecursive.OrderBy(x => x).ToList());
+            Assert.Equal(expected, resultIterative.OrderBy(x => x).ToList());
+        }
+
+        [Fact]
+        public void PermutationWithDuplicatesTest()
+        {
+            var expected = new List<string> {
+                "aabc", "abac","abca", "aacb",
+                "acab","acba", "baac","baca",
+                "bcaa", "caab", "caba", "cbaa"
+            }.OrderBy(x => x).ToList();
+
+            var resultRecursive = PermutationWithDuplicates.Run("aabc");
+            Assert.Equal(expected, resultRecursive.OrderBy(x => x).ToList());
+        }
     }
 }
