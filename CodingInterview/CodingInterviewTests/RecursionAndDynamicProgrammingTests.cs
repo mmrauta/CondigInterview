@@ -99,5 +99,16 @@ namespace CodingInterviewTests
             var resultRecursive = PermutationWithDuplicates.Run("aabc");
             Assert.Equal(expected, resultRecursive.OrderBy(x => x).ToList());
         }
+
+        [Fact]
+        public void ParenthesisTest()
+        {
+            var expected = new List<string> {
+                "((()))","()()()", "()(())", "(())()", "(()())"
+            }.OrderBy(x => x).ToList();
+
+            var resultRecursive = Parenthesis.Run(3);
+            Assert.Equal(expected, resultRecursive.OrderBy(x => x).ToList());
+        }
     }
 }
