@@ -34,6 +34,35 @@ namespace CodingInterviewTests
             return builder.ToString();
         }
 
+        /// <summary>
+        /// Transforms string to a linked list.
+        /// String should consist of expected node values (integers) separated by hyphens.
+        /// </summary>
+        /// <param name="input">Text with hyphen separated integer node values.</param>
+        /// <returns>Head node of the linked list.</returns>
+        public static Node ToLinkedList(this string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return null;
+
+            var nodeValues = input.Split('-');
+            if (nodeValues.Length == 0)
+                return null;
+            
+            var node = new Node(int.Parse(nodeValues[0]));
+            var head = node;
+            
+            int i = 1;
+            while (i < nodeValues.Length)
+            {
+                node.Next = new Node(int.Parse(nodeValues[i]));
+                node = node.Next;
+                i++;
+            }
+
+            return head;
+        }
+
         public static string ToString(this TreeNode input)
         {
             var builder = new StringBuilder();

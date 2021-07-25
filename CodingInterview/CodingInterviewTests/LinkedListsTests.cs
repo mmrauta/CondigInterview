@@ -35,5 +35,18 @@ namespace CodingInterviewTests
             DeleteMiddleNode.Run(input.Next.Next.Next);
             Assert.Equal("53461", TestHelpers.ToString(input));
         }
+
+        [Theory]
+        [InlineData("3-5-8-5-10-2-1", "32158510")]
+        [InlineData("3-5-5-5-10-2", "3255510")]
+        [InlineData("2-1", "21")]
+        [InlineData("10", "10")]
+        [InlineData("", "")]
+        public void PartitionTest(string inputList, string expectedResult)
+        {
+            var input = TestHelpers.ToLinkedList(inputList);
+            var result = Partition.Run(input, 5);
+            Assert.Equal(expectedResult, TestHelpers.ToString(result));
+        }
     }
 }
